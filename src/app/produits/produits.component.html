@@ -12,11 +12,12 @@
           [(ngModel)]="produitCourant.id"
           required
           readonly
+          class="form-control"
         />
       </div>
       <div class="form-group">
         <label for="code">Code:</label>
-        <input type="text" name="code" [(ngModel)]="produitCourant.code" />
+        <input type="text" name="code" [(ngModel)]="produitCourant.code" class="form-control" />
       </div>
       <div class="form-group">
         <label for="designation">Désignation:</label>
@@ -24,15 +25,16 @@
           type="text"
           name="designation"
           [(ngModel)]="produitCourant.designation"
+          class="form-control"
         />
       </div>
       <div class="form-group">
         <label for="prix">Prix:</label>
-        <input type="text" name="prix" [(ngModel)]="produitCourant.prix" />
-      </div>
+        <input type="text" name="prix" [(ngModel)]="produitCourant.prix" class="form-control" />
+      </div><br>
       <div class="form-actions">
         <button type="submit" #validerButton [disabled]="!produitForm.form.valid">
-          Valider
+          <i class="bi bi-check"></i> Valider
         </button>
       </div>
     </form>

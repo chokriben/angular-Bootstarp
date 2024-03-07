@@ -2,9 +2,9 @@
   "produits": [
     {
       "id": "1",
-      "code": "x12sssssssssssqccc",
+      "code": "ttt",
       "designation": "Panier ",
-      "prix": "200"
+      "prix": "20"
     },
     {
       "id": "2",
